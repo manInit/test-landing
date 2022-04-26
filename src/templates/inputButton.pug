@@ -1,0 +1,5 @@
+mixin inputButton(idInput, placeholderInput, btnText)
+  .input-btn 
+    label.input-btn__wrap(for=id_input)
+      input.input-btn__input(type='text', placeholder=placeholderInput, id=idInput)
+    button.input-btn__btn.btn(id='btn-' + idInput)=btnText  

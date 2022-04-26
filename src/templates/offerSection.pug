@@ -1,0 +1,13 @@
+include ./inputButton
+
+mixin offerSection(title, idInput, imgUrl, imageDesc, description = '')
+  section.offer-sections__item.offer-section
+    .offer-section__info
+      h2.offer-section__title=title 
+      if description
+        p.offer-section__desc=description
+      .offer-section__input
+        +inputButton(idInput, 'Введите e-mail', 'Узнать')
+    .offer-section__img
+      img(src=require('./images/' + imgUrl), alt=imageDesc)
+    

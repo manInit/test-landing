@@ -1,3 +1,5 @@
+include ./templates/offerSection
+
 doctype html
 html(lang="ru")
   head
@@ -6,3 +8,32 @@ html(lang="ru")
     meta(name="viewport" content="width=device-width, initial-scale=1")
   body
     include ./templates/header.pug
+    .container
+      .offer-sections
+        +offerSection(
+          'Не пропускайте важные оплаты', 
+          'pass-input',
+          'pass-offer.png', 
+          'Важные оплаты', 
+          'Если от них зависят ваши проекты или старт рекламных кампаний'
+        )
+        +offerSection(
+          'Сократите издержки на бухгалтерию и коммуникации', 
+          'save-input',
+          'save-offer.png', 
+          'Накопительство', 
+          'Получайте информацию о платежах на счет компании там, где вам удобно'
+        )
+        +offerSection(
+          'Создавайте собственные сценарии действий', 
+          'scenario-input',
+          'scenario-offer.png', 
+          'Сценарий действий', 
+          'При поступлении денег на счет вашей компании'
+        )
+        +offerSection(
+          'Реагируйте на платежи так быстро, как они поступают на ваш счет', 
+          'react-input',
+          'react-offer.png', 
+          'Быстрое реагирование'
+        )

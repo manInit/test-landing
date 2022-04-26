@@ -1,0 +1,29 @@
+@use 'variables' as v;
+
+.input-btn {
+  max-width: 440px;
+  display: flex;
+  background: v.$input-bg;
+  border-radius: 44px;
+  padding-left: 20px;
+  &__wrap {
+    flex-grow: 1;
+  }
+  &__input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    background: v.$input-bg;
+    border-radius: 44px;
+    color: v.$input-color;
+    padding-right: 5px;
+    font-size: 16px;
+    &::placeholder { 
+      color: v.$input-color;
+    }
+    &:focus {
+      outline: none;
+    }
+  }
+} 
+

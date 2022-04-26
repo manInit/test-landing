@@ -8,13 +8,5 @@
   margin-top: 35px;
   display: flex;
   align-items: center;
-  &__nav {
-    margin-left: 72px;
-  }
-  &__lang {
-    margin-left: 55px;
-  }
-  &__btn {
-    margin-left: 45px;
-  }
+  justify-content: space-between;
 }

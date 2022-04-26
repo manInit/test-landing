@@ -3,7 +3,12 @@
 
 .btn {
   @include m.btn-round;
-  border: 1px solid v.$second-grad-color;
   font-weight: 600;
-  color: v.$second-grad-color
+  background: v.$grad;
+  color: v.$main-bg-color;
+  &_header {
+    background: v.$main-bg-color;
+    color: v.$second-grad-color;
+    border: 1px solid v.$second-grad-color;
+  }
 }

@@ -1,0 +1,10 @@
+@use 'offerSection';
+
+.offer-sections {
+  margin-top: 90px;
+  &__item {
+    & + & {
+      margin-top: 185px;
+    }
+  }
+}  

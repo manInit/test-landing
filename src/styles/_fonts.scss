@@ -1,6 +1,27 @@
 @font-face {
-  font-family: 'ae';
-  src: url('../fonts/Aesthetic Violet.woff2');
+  font-family: 'Avenir Next';
+  src: url('../fonts/AvenirNextCyr-Regular.woff');
   font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Avenir Next';
+  src: url('../fonts/AvenirNextCyr-Medium.woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Avenir Next';
+  src: url('../fonts/AvenirNextCyr-Demi.woff');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Avenir Next';
+  src: url('../fonts/AvenirNextCyr-Bold.woff');
+  font-weight: bold;
   font-style: normal;
 }

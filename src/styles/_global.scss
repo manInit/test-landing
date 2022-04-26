@@ -5,5 +5,11 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	font-family: 'ae';
+	font-family: 'Avenir Next', sans-serif;
+	color: $font-color;
+}
+
+.container {
+	max-width: $max-width-container;
+	margin: 0 auto;
 }

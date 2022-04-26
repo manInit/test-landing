@@ -1,0 +1,9 @@
+@use 'mixins' as m;
+@use 'variables' as v;
+
+.btn {
+  @include m.btn-round;
+  border: 1px solid v.$second-grad-color;
+  font-weight: 600;
+  color: v.$second-grad-color
+}

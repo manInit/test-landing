@@ -1,0 +1,18 @@
+@use 'variables' as v;
+
+.lang {
+  display: flex;
+  &__item {
+    cursor: pointer;
+    opacity: 0.5;
+    text-transform: uppercase;
+    &_active {
+      opacity: 1;
+      color: v.$second-grad-color;
+      text-decoration: underline;
+    }
+    & + & {
+      margin-left: 12px
+    }
+  }
+}

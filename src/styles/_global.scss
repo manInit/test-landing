@@ -1,15 +1,29 @@
-@use 'variables';
 @use 'fonts';
+@use 'variables' as v;
 
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 	font-family: 'Avenir Next', sans-serif;
-	color: $font-color;
+	color: v.$font-color;
+}
+
+body {
+	background-color: v.$main-bg-color;
+}
+
+button {
+	background: none;
+	border: none;
+	cursor: pointer;
+}
+
+a {
+	text-decoration: none;
 }
 
 .container {
-	max-width: $max-width-container;
+	max-width: v.$max-width-container;
 	margin: 0 auto;
 }

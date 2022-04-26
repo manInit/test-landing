@@ -1,14 +1,15 @@
 $max-width-container: 1098px;
 
-$grad: linear-gradient(180deg, #1792C7 0%, #00B8F0 100%);
-$grad-dash: linear-gradient(180deg, #00B8F0 0%, #00B8F0 0.01%, #B2EEFC 73.96%);
+$second-grad-color: #00B8F0;
+$grad: linear-gradient(180deg, #1792C7 0%, $second-grad-color 100%);
+$grad-dash: linear-gradient(180deg, $second-grad-color 0%, $second-grad-color 0.01%, #B2EEFC 73.96%);
 
 $input-color: #1792C7;
 $input-border: rgba(56, 152, 254, 0.4);
 $input-bg: #F3F9FF;
 $input-reverse-bg: #FFF;
 
-$link-color: #00B8F0;
+
 $font-color: #2D3238;
 $font-transparent-color: rgba(56, 152, 254, 0.3);
 

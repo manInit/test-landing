@@ -42,11 +42,11 @@ if (isDev) {
 module.exports = {
 	mode: mode,
 	target: target,
-	entry: './src/index.js',
+	entry: ['./src/index.js', './src/styles/index.scss'],
 	output: {
 		filename: 'bundle.[hash].js',
 		path: path.resolve(__dirname, 'dist'),
-		assetModuleFilename: 'assets/[hash][ext][query]',
+		assetModuleFilename: 'assets/[name][ext]',
 		clean: true
 	},
 	module: {
@@ -54,7 +54,7 @@ module.exports = {
 			{
         test: /\.pug$/,
         use: {
-					loader: 'pug3-loader'
+					loader: 'pug-loader'
 				}
       },
 			{
@@ -98,8 +98,11 @@ module.exports = {
 	},
 	devtool: isDev ? 'source-map' : false,
 	devServer: {
-		static: './',
+		static: {
+      directory: path.join(__dirname, 'dist'),
+    },
 		open: true,
-		hot: true
+    port: 8080,
+		watchFiles: ['./src/**/**']
 	}
 }

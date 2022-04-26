@@ -1,4 +1,5 @@
 include ./templates/offerSection
+include ./templates/twoColumnSection
 
 doctype html
 html(lang="ru")
@@ -7,8 +8,8 @@ html(lang="ru")
     title EveryPay
     meta(name="viewport" content="width=device-width, initial-scale=1")
   body
-    include ./templates/header.pug
     .container
+      include ./templates/header.pug
       .offer-sections
         +offerSection(
           'Не пропускайте важные оплаты', 
@@ -37,3 +38,6 @@ html(lang="ru")
           'react-offer.png', 
           'Быстрое реагирование'
         )
+      include ./templates/advantages.pug
+      include ./templates/works.pug
+      include ./templates/automation.pug      

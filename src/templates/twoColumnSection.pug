@@ -1,0 +1,7 @@
+mixin twoColumnSection(imgName, imageDesc, title, info)
+  section.two-column-section 
+    .two-column-section__img 
+      img(src=require('../images/' + imgName), alt=imageDesc)
+    .two-column-section__content
+      h3.two-column-section__title=title 
+      p.two-column-section__info=info

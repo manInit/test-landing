@@ -1,0 +1,20 @@
+.two-column-section {
+  display: flex;
+  align-items: center;
+  &__img {
+    width: 50%;
+  }
+  &__content {
+    width: 50%;
+  }
+  &__title {
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 36px;
+  }
+  &__info {
+    margin-top: 24px;
+    font-size: 18px;
+    line-height: 28px;
+  }
+}

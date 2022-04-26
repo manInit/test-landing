@@ -1,6 +1,6 @@
 include ./inputButton
 
-mixin offerSection(title, idInput, imgUrl, imageDesc, description = '')
+mixin offerSection(title, idInput, imgName, imageDesc, description = '')
   section.offer-sections__item.offer-section
     .offer-section__info
       h2.offer-section__title=title 
@@ -9,5 +9,5 @@ mixin offerSection(title, idInput, imgUrl, imageDesc, description = '')
       .offer-section__input
         +inputButton(idInput, 'Введите e-mail', 'Узнать')
     .offer-section__img
-      img(src=require('../images/' + imgUrl), alt=imageDesc)
+      img(src=require('../images/' + imgName), alt=imageDesc)
     

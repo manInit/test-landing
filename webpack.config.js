@@ -47,15 +47,14 @@ module.exports = {
 		filename: 'bundle.[hash].js',
 		path: path.resolve(__dirname, 'dist'),
 		assetModuleFilename: 'assets/[name][ext]',
-		clean: true
+		clean: true,
+		publicPath: '/'
 	},
 	module: {
 		rules: [
 			{
         test: /\.pug$/,
-        use: {
-					loader: 'pug-loader'
-				}
+				loader: '@webdiscus/pug-loader'
       },
 			{
 				test: /\.(s[ac]|c)ss$/,

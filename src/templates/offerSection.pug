@@ -9,5 +9,5 @@ mixin offerSection(title, idInput, imgUrl, imageDesc, description = '')
       .offer-section__input
         +inputButton(idInput, 'Введите e-mail', 'Узнать')
     .offer-section__img
-      img(src=require('./images/' + imgUrl), alt=imageDesc)
+      img(src=require('../images/' + imgUrl), alt=imageDesc)
     

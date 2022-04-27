@@ -1,0 +1,10 @@
+@use 'variables' as v;
+
+.line {
+  display: block;
+  height: 1px;
+  width: 100%;
+  opacity: 0.2;
+  background: v.$grad;
+  border: none;
+}

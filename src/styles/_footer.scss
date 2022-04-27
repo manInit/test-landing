@@ -1,0 +1,19 @@
+@use 'variables' as v;
+
+.footer {
+  margin-top: 40px;
+  padding-bottom: 120px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  &__copyright {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 8px;
+  }
+  &__politics {
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    color: v.$second-grad-color
+  }
+}

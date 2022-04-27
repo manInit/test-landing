@@ -15,7 +15,11 @@
   &__input {
     margin-top: 60px;
     .input-btn {
-      border: 1px solid v.$input-border
+      border: 1px solid v.$input-border;
+      background: #fff;
+      input {
+        background: #fff;
+      }
     }
   }
 }

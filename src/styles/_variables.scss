@@ -2,8 +2,8 @@ $max-width-container: 1098px;
 
 $first-grad-color: #1792C7;
 $second-grad-color: #00B8F0;
-$grad: linear-gradient(180deg, $first-grad-color 0%, $second-grad-color 100%);
-$grad-dash: linear-gradient(180deg, $second-grad-color 0%, $second-grad-color 0.01%, #B2EEFC 73.96%);
+$grad: linear-gradient(180deg, $first-grad-color, 0%, $second-grad-color 100%);
+$grad-dash: linear-gradient(-90deg, $second-grad-color 0%, $second-grad-color 0.01%, #B2EEFC 73.96%);
 
 $input-color: #1792C7;
 $input-border: rgba(56, 152, 254, 0.4);

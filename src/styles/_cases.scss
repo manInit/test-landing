@@ -1,0 +1,56 @@
+@use 'variables' as v;
+
+.cases {
+  margin-top: 150px;
+  &__list {
+    margin-top: 85px;
+    display: flex; 
+    justify-content: space-between;
+  }
+  &__item {
+    flex-basis: 355px;
+    padding: 30px 25px;
+    min-height: 300px;
+    border: 1px solid v.$card-border-color;
+    display: flex;
+    flex-direction: column;
+    &_active {
+      background: v.$second-bg-color;
+      border-bottom: 3px solid v.$first-grad-color;
+    }
+  }
+  &__content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  &__imgs {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+    img + img {
+      margin-left: 10px;
+    }
+  }
+  &__name {
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 30px;
+    letter-spacing: 0.5px;
+  }
+  &__link {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 600;
+    color: v.$first-grad-color;
+    letter-spacing: 0.5px;
+
+    img {
+      margin-left: 3px;
+    }
+  }
+}

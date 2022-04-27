@@ -1,0 +1,34 @@
+@use 'variables' as v;
+
+.form {
+  width: 100%;
+  &__input-group {
+    width: 100%;
+    display: block;
+    input, textarea {
+      padding: 8px 20px;
+      width: 100%;  
+      font-size: 18px;
+      border-radius: 40px;
+      border: 1px solid v.$input-border;
+      &:focus {
+        outline: none;
+      }
+      &::placeholder { 
+        color: v.$input-color;
+      }
+    }
+    textarea {
+      padding-top: 15px;
+      resize: none;
+    }
+    & + & {
+      margin-top: 20px;
+    }
+  }
+
+  &__submit {
+    max-width: 175px;
+    margin-top: 20px;
+  }
+}

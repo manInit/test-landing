@@ -1,0 +1,21 @@
+@use 'variables' as v;
+
+.automation {
+  margin-top: 140px;
+  padding: 60px 100px;
+  display: flex;
+  justify-content: space-between;
+  background: v.$second-bg-color;
+
+  &__desc {
+    margin-top: 10px;
+    font-size: 18px;
+    line-height: 28px;
+  }
+  &__input {
+    margin-top: 60px;
+    .input-btn {
+      border: 1px solid v.$input-border
+    }
+  }
+}

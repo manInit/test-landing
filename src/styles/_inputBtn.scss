@@ -18,6 +18,7 @@
     color: v.$input-color;
     padding-right: 5px;
     font-size: 16px;
+    letter-spacing: 1px;
     &::placeholder { 
       color: v.$input-color;
     }

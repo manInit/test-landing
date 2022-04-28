@@ -54,3 +54,17 @@
     }
   }
 }
+
+@media screen and (max-width: v.$break-points-lg) {
+  .cases {
+    &__list {
+      display: flex;
+    }
+    &__item {
+      flex-shrink: 0;
+      & + & {
+        margin-left: 10px;
+      }
+    }
+  }
+}

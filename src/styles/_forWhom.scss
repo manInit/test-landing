@@ -1,3 +1,5 @@
+@use 'variables' as v;
+
 .for-whom {
   margin-top: 160px;
   &__list {
@@ -19,8 +21,40 @@
     margin-top: 10px;
     font-size: 18px;
     line-height: 28px;
+    letter-spacing: 0.5px;
   }
   &__img {
     text-align: center;
+  }
+}
+
+@media screen and (max-width: v.$break-points-lg) {
+  .for-whom {
+    &__item {
+      max-width: 200px;
+      & + & {
+        margin-left: 15px;
+      }
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+    }
+    &__for {
+      margin-top: 30px;
+    }
+    &__desc {
+      margin-top: 24px;
+      font-size: 16px;
+      line-height: 20px;
+    }
+    &__img {
+      height: 135px;
+      text-align: center;
+      img {
+        height: 100%;
+        object-fit: contain;
+      }
+      
+    }
   }
 }

@@ -51,3 +51,22 @@
     letter-spacing: 0.5px;
   }
 }
+
+@media screen and (max-width: v.$break-points-lg) {
+  .coming-soon {
+    &__list {
+      margin-top: 70px;
+    }
+    &__item {
+      flex-direction: column;
+      max-width: 430px;
+      margin: 0 auto;
+    }
+    &__name {
+      text-align: center;
+    }
+    &__content {
+      margin-top: 22px;
+    }
+  }
+}

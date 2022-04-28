@@ -28,3 +28,18 @@
     flex-basis: 40%;
   }
 }
+
+@media screen and (max-width: v.$break-points-lg) {
+  .connect {
+    &__content {
+      flex-direction: column;
+      text-align: center;
+      width: 70%;
+      margin: 0 auto;
+    }
+    &__form {
+      text-align: left;
+      margin-top: 70px;
+    }
+  }
+}

@@ -23,3 +23,17 @@
     }
   }
 }
+
+@media screen and (max-width: v.$break-points-lg) {
+  .automation {
+    flex-direction: column;
+    &__desc {
+      width: 80%;
+      margin: 24px auto 0 auto;
+      text-align: center;
+    }
+    &__input {
+      margin-top: 48px;
+    }
+  }
+}

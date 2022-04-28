@@ -1,3 +1,5 @@
+@use 'variables' as v;
+
 .tariffs {
   margin-top: 150px;
   display: flex;
@@ -5,6 +7,9 @@
   &__content {
     padding-top: 20px;
     flex-basis: 50%;
+    &_mini {
+      display: none;
+    }
   }
   &__desc {
     margin-top: 25px;
@@ -18,5 +23,42 @@
   }
   &__input {
     margin-top: 40px;
+  }
+}
+
+@media screen and (max-width: v.$break-points-lg) {
+  .tariffs {
+    display: block;
+    &__content {
+      display: none;
+      &_mini {
+        display: block;
+      }
+    }
+    &__img {
+      display: none;
+      &_mini {
+        display: inline;
+        height: 250px;
+        margin-left: 5px;
+        img {
+          height: 100%;
+          object-fit: contain;
+        }
+      }
+    }
+    &__desc {
+      display: flex;
+      margin-top: 70px;
+    }
+    &__text {
+      font-size: 18px;
+      line-height: 28px;
+    }
+    &__input {
+      display: flex;
+      justify-content: center;
+      margin: 20px auto 0 auto;
+    }
   }
 }

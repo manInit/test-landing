@@ -11,6 +11,7 @@
 
 body {
 	background-color: v.$main-bg-color;
+	overflow-x: hidden;
 }
 
 button {
@@ -36,4 +37,14 @@ h2 {
 
 .connect-wrapper {
 	background: v.$second-bg-color;
+}
+
+@media screen and (max-width: v.$break-points-lg) {
+	.container {
+		min-width: v.$lg-width-container;
+		padding: 0 10%;
+	}
+	h2 {
+		text-align: center;
+	}
 }

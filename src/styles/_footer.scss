@@ -17,3 +17,10 @@
     color: v.$second-grad-color
   }
 }
+
+@media screen and (max-width: v.$break-points-lg) {
+  .footer {
+    margin-top: 70px;
+    padding-bottom: 40px;
+  }
+}

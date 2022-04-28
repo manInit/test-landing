@@ -1,6 +1,6 @@
 include ./inputButton
 
-section.tariffs 
+section.tariffs
   .tariffs__content
     h2.tariffs__title Тарифы
     .tariffs__desc 
@@ -8,5 +8,16 @@ section.tariffs
       p Для компаний, участвующих в тестировании, сервис  навсегда бесплатен. Напишите нам и мы с вами свяжемся.
     .tariffs__input 
       +inputButton('tariffs-input', 'Введите email', 'Узнать')
-  .tarrifs__img 
+  .tariffs__img 
     img(src=require('../images/ruble.png'), alt='Рубль')
+
+  .tariffs__content.tariffs__content_mini
+    h2.tariffs__title Тарифы
+    .tariffs__desc 
+      .tariffs__text
+        p Everypay находится в стадии закрытого beta-теста, но у вас есть возможность присоединиться к тестированию сервиса. 
+        p Для компаний, участвующих в тестировании, сервис  навсегда бесплатен. Напишите нам и мы с вами свяжемся.
+      .tariffs__img.tariffs__img_mini
+        img(src=require('../images/ruble.png'), alt='Рубль')
+    .tariffs__input 
+      +inputButton('tariffs-input', 'Введите email', 'Узнать')

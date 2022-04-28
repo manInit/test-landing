@@ -24,3 +24,14 @@
     padding-bottom: 40px;
   }
 }
+
+@media screen and (max-width: v.$break-points-md) {
+  .footer {
+    flex-direction: column-reverse;
+    align-items: center;
+    &__copyright {
+      margin-top: 15px;
+      font-size: 12px;
+    }
+  }
+}

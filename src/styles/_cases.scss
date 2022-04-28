@@ -68,3 +68,23 @@
     }
   }
 }
+
+@media screen and (max-width: v.$break-points-md) {
+  .cases {
+    margin-top: 135px;
+    &__list {
+      margin-top: 40px;
+    }
+    &__name {
+      font-size: 18px;
+    }
+    &__item {
+      padding: 20px 15px;
+      max-width: 230px;
+      margin-left: 15px;
+      &:first-child {
+        margin-left: 15;
+      }
+    }
+  }
+}

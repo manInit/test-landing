@@ -62,3 +62,40 @@
     }
   }
 }
+
+@media screen and (max-width: v.$break-points-md) {
+  .tariffs {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column-reverse;
+    &__content {
+      display: block;
+      &_mini {
+        display: none;
+      }
+    }
+    &__desc {
+      padding-left: 10px;
+      margin-top: 40px;
+      flex-direction: column;
+    }
+    &__img {
+      display: block;
+      text-align: center;
+      height: 200px;
+      img {
+        height: 100%;
+        object-fit: contain;
+      }
+      &_mini {
+        display: none;
+      }
+    }
+    &__input {
+      margin-top: 40px;
+      .btn {
+        min-width: 110px;
+      }
+    }
+  }
+}

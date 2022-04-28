@@ -55,3 +55,32 @@
     }
   }
 }
+
+@media screen and (max-width: v.$break-points-md) {
+  .security {
+    margin-top: 120px;
+    display: flex;
+    flex-direction: column-reverse;
+    &__wrapper {
+      flex-direction: column;
+    }
+    &__img {
+      margin: 0 auto;
+      width: 60%;
+      img {
+        width: 100%;
+        object-fit: contain;
+      }
+    }
+    &__desc {
+      margin-top: 40px;
+    }
+    &__title {
+      display: none;
+      &_inner {
+        margin-top: 40px;
+        display: block;
+      }
+    }
+  }
+}

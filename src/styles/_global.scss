@@ -8,33 +8,29 @@
 	font-family: 'Avenir Next', sans-serif;
 	color: v.$font-color;
 }
-
-body {
-	background-color: v.$main-bg-color;
+html, body {
 	overflow-x: hidden;
 }
-
+body {
+	background-color: v.$main-bg-color;
+}
 button {
 	background: none;
 	border: none;
 	cursor: pointer;
 }
-
 a {
 	text-decoration: none;
 }
-
 h2 {
 	font-size: 40px;
 	line-height: 46px;
 	letter-spacing: 1px;
 }
-
 .container {
 	max-width: v.$max-width-container;
 	margin: 0 auto;
 }
-
 .connect-wrapper {
 	background: v.$second-bg-color;
 }
@@ -46,5 +42,16 @@ h2 {
 	}
 	h2 {
 		text-align: center;
+	}
+}
+
+@media screen and (max-width: v.$break-points-md) {
+	.container {
+		min-width: v.$md-width-container;
+		padding: 0 10px;
+	}
+	h2 {
+		font-size: 32px;
+		line-height: 38px;
 	}
 }

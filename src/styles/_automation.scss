@@ -33,7 +33,28 @@
       text-align: center;
     }
     &__input {
+      width: max-content;
+      margin-left: auto;
+      margin-right: auto;
       margin-top: 48px;
+    }
+  }
+}
+
+@media screen and (max-width: v.$break-points-md) {
+  .automation {
+    position: relative;
+    left: -10px;
+    width: 100vw;
+    padding: 60px 10px;
+    &__title {
+      font-size: 28px;
+    }
+    &__desc {
+      margin-top: 12px;
+    }
+    .btn {
+      min-width: 100px;
     }
   }
 }

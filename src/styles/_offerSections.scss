@@ -1,3 +1,4 @@
+@use 'variables' as v;
 @use 'offerSection';
 
 .offer-sections {
@@ -7,4 +8,10 @@
       margin-top: 185px;
     }
   }
-}  
+} 
+
+@media screen and (max-width: v.$break-points-md) {
+  .offer-sections {
+    margin-top: 50px;
+  }
+}

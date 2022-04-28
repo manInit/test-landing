@@ -43,3 +43,23 @@
     }
   }
 }
+
+@media screen and (max-width: v.$break-points-md) {
+  .connect {
+    margin-top: 33px;
+    padding-top: 60px;
+    &__content {
+      width: 100%;
+    }
+    &__motiv {
+      font-size: 18px;
+      line-height: 28px;
+    }
+    &__email-title, &__email-value {
+      font-size: 18px;
+    }
+    &__form {
+      margin-top: 40px;
+    }
+  }
+}

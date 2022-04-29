@@ -1,9 +1,12 @@
 include ./inputButton
 
-mixin offerSection(title, idInput, imgName, imageDesc, description = '')
+mixin offerSection(title, idInput, imgName, imageDesc, description = '', isH1 = false)
   section.offer-sections__item.offer-section
     .offer-section__info
-      h2.offer-section__title=title 
+      if isH1
+        h1.offer-section__title=title 
+      else 
+        h2.offer-section__title=title 
       if description
         p.offer-section__desc=description
       .offer-section__input

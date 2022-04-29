@@ -1,0 +1,13 @@
+@use 'variables' as v;
+
+.success {
+  user-select: none;
+  padding: 50px;
+  min-height: 100%;
+  font-size: 18px;
+  background-color: v.$main-bg-color;
+  transition: all v.$transition-time;
+  &__last {
+    margin-top: 20px;
+  }
+}

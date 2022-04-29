@@ -11,5 +11,6 @@ new Email('scenario-input')
 new Email('react-input')
 new Email('automation-input')
 new Email('tariffs-input')
+new Email('tariffs-input-mini')
 
 new FormConnect('form-connect')

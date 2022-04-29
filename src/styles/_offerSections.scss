@@ -9,7 +9,7 @@
     }
   }
   &__control {
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
     margin-top: 40px;
@@ -36,6 +36,9 @@
       transition: right v.$transition-time, left v.$transition-time;
       position: relative;
       right: 0;
+    }
+    &__control {
+      display: flex;
     }
     &__item {
       flex-shrink: 0;

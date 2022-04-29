@@ -32,7 +32,17 @@ h2 {
 	margin: 0 auto;
 }
 .connect-wrapper {
-	background: v.$second-bg-color;
+	background-image: url('../images/footer-grid.png');
+	background-repeat: no-repeat;
+	background-position-y: 100%;
+	background-color: v.$second-bg-color;
+}
+.advantages-wrapper {
+	background-image: url('../images/sign-marker.png');
+}
+.for-whom-wrapper {
+	background-image: url('../images/sign-marker.png');
+	background-position-x: 70%;
 }
 
 @media screen and (max-width: v.$break-points-lg) {

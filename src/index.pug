@@ -40,11 +40,17 @@ html(lang="ru")
             'Быстрое реагирование'
           )
         .offer-sections__control
-      include ./templates/advantages.pug
+    .advantages-wrapper
+      .container
+        include ./templates/advantages.pug
+    .container
       include ./templates/works.pug
       include ./templates/automation.pug    
-      include ./templates/banksIntegration.pug  
-      include ./templates/forWhom.pug
+      include ./templates/banksIntegration.pug 
+    .for-whom-wrapper 
+      .container 
+        include ./templates/forWhom.pug
+    .container
       include ./templates/cases.pug
       include ./templates/tariffs.pug
       include ./templates/comingSoon.pug

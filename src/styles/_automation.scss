@@ -5,7 +5,10 @@
   padding: 60px 100px;
   display: flex;
   justify-content: space-between;
-  background: v.$second-bg-color;
+  background-color: v.$second-bg-color;
+  background-image: url('../images/grid-bg.png');
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
   &__desc {
     margin-top: 10px;
     font-size: 18px;

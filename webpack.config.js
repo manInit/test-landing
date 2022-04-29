@@ -11,7 +11,7 @@ let isDev = mode === 'development'
 const minimizer = []
 const plugins = [
 	new MiniCssExtractPlugin({
-		filename: 'styles.[hash].css'
+		filename: 'styles.css'
 	}),
 	new HtmlWebpackPlugin({
 		template: './src/index.pug',
@@ -44,7 +44,7 @@ module.exports = {
 	target: target,
 	entry: ['./src/index.js', './src/styles/index.scss'],
 	output: {
-		filename: 'bundle.[hash].js',
+		filename: 'index.js',
 		path: path.resolve(__dirname, 'dist'),
 		assetModuleFilename: 'assets/[name][ext]',
 		clean: true,

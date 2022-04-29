@@ -1,1 +1,3 @@
-console.log('hello world')
+import CasesSlider from './scripts/casesSlider'
+
+new CasesSlider('cases')

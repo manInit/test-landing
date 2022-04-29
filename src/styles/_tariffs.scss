@@ -28,6 +28,7 @@
 
 @media screen and (max-width: v.$break-points-lg) {
   .tariffs {
+    margin-top: 110px;
     display: block;
     &__content {
       display: none;

@@ -102,6 +102,5 @@ module.exports = {
     },
 		open: true,
     port: 8080,
-		watchFiles: ['./src/**/**']
 	}
 }

@@ -1,0 +1,4 @@
+mixin nav(links)
+  nav.nav 
+    each title, url in links
+      a.nav__item(href=url)=title

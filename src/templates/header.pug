@@ -1,15 +1,32 @@
+include ./nav
+
 header.header 
   .header__logo.logo
-    img(src=require('../images/logo.png'), alt="EveryPay")
-  .header__burger-menu
-  nav.header__nav.nav 
-    a.nav__item(href="#") Как это работает?
-    a.nav__item(href="#") Для кого
-    a.nav__item(href="#") Кейсы
-    a.nav__item(href="#") Тарифы
-    a.nav__item(href="#") Безопасность
+    img(src=require('../images/logo.png'), alt='EveryPay')
+  label.header__burger-menu(for='menu-toggle')
+  .header__nav 
+     +nav({
+        '#1': 'Как это работает',
+        '#2': 'Для кого',
+        '#3': 'Кейсы',
+        '#4': 'Тарифы',
+        '#5': 'Безопасность'
+        })
   .header__lang.lang
     .lang__item.lang__item_active Ru
     .lang__item En
   .header__btn
     button.btn.btn_header Подключиться
+  input.header__toggle(type='checkbox', id='menu-toggle')
+  .header__menu
+    .header__nav_menu
+      +nav({
+        '#1': 'Как это работает',
+        '#2': 'Для кого',
+        '#3': 'Кейсы',
+        '#4': 'Тарифы',
+        '#5': 'Безопасность',
+        '#6': 'Контакты'
+        })
+    .header__enter
+      button.btn Вход

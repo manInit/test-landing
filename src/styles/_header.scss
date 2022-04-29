@@ -6,19 +6,63 @@
 
 .header {
   margin-top: 35px;
+  position: relative;
+  z-index: 2;
   display: flex;
   align-items: center;
   justify-content: space-between;
-
   &__burger-menu {
     display: none;  
+  }
+  &__menu {
+    display: none;
+    position: fixed;
+    z-index: -1;
+    top: -100vh;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: v.$main-bg-color;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: top 0.5s;
+  }
+  &__nav_menu {
+    .nav {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-size: 24px;
+      font-weight: 500;
+      a + a {
+        text-align: center;
+        width: 100%;
+        margin-left: 0; 
+        margin-top: 32px;
+      }
+    }
+  }
+  &__enter {
+    margin-top: 35px;
+  }
+  &__toggle {
+    display: none;
+    &:checked ~ .header__menu {
+      display: flex;
+      top: 0px;
+    }
   }
 }
 
 @media screen and (max-width: v.$break-points-lg) {
   .header {
+    padding: 0 10px;
     &__nav, &__lang, &__btn {
       display: none;
+    }
+    &__menu {
+      display: flex;
     }
     &__burger-menu {
       display: block;

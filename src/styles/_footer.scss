@@ -33,6 +33,9 @@
   .footer {
     flex-direction: column-reverse;
     align-items: center;
+    &__politics {
+      text-align: center;
+    }
     &__copyright {
       margin-top: 15px;
       font-size: 12px;

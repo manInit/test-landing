@@ -101,6 +101,7 @@ module.exports = {
       directory: path.join(__dirname, 'dist'),
     },
 		open: true,
+		hot: true,
     port: 8080,
 	}
 }

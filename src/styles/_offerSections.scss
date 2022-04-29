@@ -8,7 +8,45 @@
       margin-top: 185px;
     }
   }
+  &__control {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+  }
+  &__bullet {
+    width: 30px;
+    height: 30px;
+    border: 1px solid v.$second-grad-color;
+    border-radius: 50%;
+    &_active {
+      border: none;
+      background: v.$first-grad-color;
+    }
+    & + & {
+      margin-left: 15px;
+    }
+  }
 } 
+
+@media screen and (max-width: v.$break-points-lg) {
+  .offer-sections {
+    &__list {
+      display: flex;
+      transition: right 0.2s, left 0.2s;
+      position: relative;
+      right: 0;
+    }
+    &__item {
+      flex-shrink: 0;
+      width: 100%;
+      & + & {
+        margin-top: 0;
+        margin-left: 10px;
+      }
+    }
+  }
+}
 
 @media screen and (max-width: v.$break-points-md) {
   .offer-sections {

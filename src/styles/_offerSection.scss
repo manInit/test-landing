@@ -27,7 +27,9 @@
 @media screen and (max-width: v.$break-points-lg) {
   .offer-section {
     text-align: center;
-    flex-direction: column;
+    display: block;
+    position: relative;
+    right: 0;
     &__info {
       width: 70%;
       margin: 0 auto;
@@ -44,6 +46,11 @@
     }
     &__img {
       margin-top: 100px;
+      height: 350px;
+      img {
+        object-fit: contain;
+        height: 100%;
+      }
     }
   }
 }

@@ -1,3 +1,4 @@
-import CasesSlider from './scripts/casesSlider'
+import Slider from './scripts/Slider'
 
-new CasesSlider('cases')
+new Slider('cases')
+new Slider('offer-sections')

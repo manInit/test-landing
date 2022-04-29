@@ -11,33 +11,35 @@ html(lang="ru")
     .container
       include ./templates/header.pug
       .offer-sections
-        +offerSection(
-          'Не пропускайте важные оплаты', 
-          'pass-input',
-          'pass-offer.png', 
-          'Важные оплаты', 
-          'Если от них зависят ваши проекты или старт рекламных кампаний'
-        )
-        +offerSection(
-          'Сократите издержки на бухгалтерию и коммуникации', 
-          'save-input',
-          'save-offer.png', 
-          'Накопительство', 
-          'Получайте информацию о платежах на счет компании там, где вам удобно'
-        )
-        +offerSection(
-          'Создавайте собственные сценарии действий', 
-          'scenario-input',
-          'scenario-offer.png', 
-          'Сценарий действий', 
-          'При поступлении денег на счет вашей компании'
-        )
-        +offerSection(
-          'Реагируйте на платежи так быстро, как они поступают на ваш счет', 
-          'react-input',
-          'react-offer.png', 
-          'Быстрое реагирование'
-        )
+        .offer-sections__list
+          +offerSection(
+            'Не пропускайте важные оплаты', 
+            'pass-input',
+            'pass-offer.png', 
+            'Важные оплаты', 
+            'Если от них зависят ваши проекты или старт рекламных кампаний'
+          )
+          +offerSection(
+            'Сократите издержки на бухгалтерию и коммуникации', 
+            'save-input',
+            'save-offer.png', 
+            'Накопительство', 
+            'Получайте информацию о платежах на счет компании там, где вам удобно'
+          )
+          +offerSection(
+            'Создавайте собственные сценарии действий', 
+            'scenario-input',
+            'scenario-offer.png', 
+            'Сценарий действий', 
+            'При поступлении денег на счет вашей компании'
+          )
+          +offerSection(
+            'Реагируйте на платежи так быстро, как они поступают на ваш счет', 
+            'react-input',
+            'react-offer.png', 
+            'Быстрое реагирование'
+          )
+        .offer-sections__control
       include ./templates/advantages.pug
       include ./templates/works.pug
       include ./templates/automation.pug    

@@ -14,7 +14,11 @@
   &__politics {
     font-size: 18px;
     letter-spacing: 0.5px;
-    color: v.$second-grad-color
+    color: v.$second-grad-color;
+    transition: color 0.2s;
+    &:hover {
+      color: v.$first-grad-color;
+    }
   }
 }
 

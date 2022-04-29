@@ -1,6 +1,14 @@
+@use 'variables' as v;
+
 .nav {
   font-size: 14px;
   letter-spacing: 1px;
+  a {
+    transition: color 0.2s;
+    &:hover {
+      color: v.$first-grad-color;
+    }
+  }
   a + a {
     margin-left: 39px;
   }

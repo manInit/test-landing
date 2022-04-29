@@ -6,9 +6,13 @@
   font-weight: 600;
   background: v.$grad;
   color: v.$main-bg-color;
+  transition: box-shadow 0.3s;
   &_header {
     background: v.$main-bg-color;
     color: v.$second-grad-color;
     border: 1px solid v.$second-grad-color;
+  }
+  &:hover {
+    box-shadow: v.$btn-shadow;
   }
 }

@@ -1,0 +1,1 @@
+export default name => /[a-zA-Zа-яА-Я]{2,}/.test(name)

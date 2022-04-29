@@ -37,13 +37,14 @@ export default class Slider {
   }
 
   _checkElements(className) {
-    return (document.querySelector(`.${className}__list`) &&
-        document.querySelector(`.${className}__item`) &&
-        document.querySelector(`.${className}__control`)) 
+    return (
+      document.querySelector(`.${className}__list`) &&
+      document.querySelector(`.${className}__item`) &&
+      document.querySelector(`.${className}__control`)
+    ) 
   }
 
   _mouseDownHandle(e) {
-    e.preventDefault()
     this.mouseX = e.clientX
   }
 

@@ -33,7 +33,7 @@
   .offer-sections {
     &__list {
       display: flex;
-      transition: right 0.2s, left 0.2s;
+      transition: right v.$transition-time, left v.$transition-time;
       position: relative;
       right: 0;
     }

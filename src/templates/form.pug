@@ -1,10 +1,13 @@
 mixin form()
-  form.form
+  form.form(id='form-connect')
     label.form__input-group
-      input(type="text", placeholder="Ваше имя*")
+      input(id='form-connect-name', type='text', placeholder='Ваше имя*')
     label.form__input-group
-      input(type="text", placeholder="Email*")
+      input(id='form-connect-email', type='text', placeholder='Email*')
     label.form__input-group
-      textarea(name="", rows="2", placeholder="Расскажите о своей компании*")
-    button.form__submit.btn Подключиться
-    
+      textarea(id='form-connect-about', name='', rows='2', placeholder='Расскажите о своей компании*')
+    button.form__submit.btn(id='form-connect-submit') Подключиться
+    .form__success 
+      p Спасибо!
+      p Мы приняли ваш запрос
+      p.form__success_last В ближайшее время наш специалист поддержки свяжется с вами.

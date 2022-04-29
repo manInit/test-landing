@@ -1,0 +1,1 @@
+export default email => /\S+@[a-zA-Z]+\.[a-zA-Z]+/.test(email)

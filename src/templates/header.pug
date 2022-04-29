@@ -1,6 +1,7 @@
 include ./nav
 
 header.header 
+  input.header__toggle(type='checkbox', id='menu-toggle')
   .header__logo.logo
     img(src=require('../images/logo.png'), alt='EveryPay')
   label.header__burger-menu(for='menu-toggle')
@@ -17,7 +18,6 @@ header.header
     .lang__item En
   .header__btn
     button.btn.btn_header Подключиться
-  input.header__toggle(type='checkbox', id='menu-toggle')
   .header__menu
     .header__nav_menu
       +nav({

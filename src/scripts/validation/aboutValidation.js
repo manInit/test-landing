@@ -1,0 +1,1 @@
+export default about => about.length >= 10

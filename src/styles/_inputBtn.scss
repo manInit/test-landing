@@ -6,6 +6,29 @@
   background: v.$input-bg;
   border-radius: 44px;
   padding-left: 20px;
+  &_success {
+    display: block;
+    font-size: 16px;
+    text-align: center;
+    padding: 12px 0;
+    max-width: 440px;
+    border: none;
+    img {
+      margin-right: 15px;
+    }
+  }
+  &_invalid {
+    border: 1px solid v.$invalid-color;
+    position: relative;
+    &:after {
+      content: attr(data-after);
+      display: block;
+      position: absolute;
+      font-size: 12px;
+      top: calc(100% + 5px);
+      color: v.$invalid-color;
+    }
+  }
   &__wrap {
     flex-grow: 1;
   }

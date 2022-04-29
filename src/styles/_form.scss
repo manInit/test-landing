@@ -2,15 +2,50 @@
 
 .form {
   width: 100%;
+  position: relative;
+  &__success {
+    user-select: none;
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    left: 100%;
+    padding: 50px;
+    min-height: 100%;
+    font-size: 18px;
+    background-color: v.$main-bg-color;
+    transition: all v.$transition-time;
+    &_last {
+      margin-top: 20px;
+    }
+  }
   &__input-group {
     width: 100%;
     display: block;
+    &_invalid {
+      position: relative;
+      &::after {
+        content: attr(data-after);
+        display: block;
+        position: absolute;
+        top: calc(100%);
+        left: 20px;
+        font-size: 12px;
+        color: v.$invalid-color;
+      }
+      input, textarea {
+        border: 1px solid v.$invalid-color;
+      }
+    }
+    &:not(&_invalid) {
+      input, textarea {
+        border: 1px solid v.$input-border;
+      }
+    }
     input, textarea {
       padding: 8px 20px;
       width: 100%;  
       font-size: 18px;
       border-radius: 40px;
-      border: 1px solid v.$input-border;
       &:focus {
         outline: none;
       }
@@ -26,7 +61,6 @@
       margin-top: 20px;
     }
   }
-
   &__submit {
     max-width: 175px;
     margin-top: 20px;

@@ -3,7 +3,8 @@
 
 .offer-section {
   display: flex;
-  color: red;
+  user-select: none;
+  color: v.$invalid-color;
   &__info {
     flex: 1 0 41%;
   }
@@ -12,6 +13,7 @@
     text-align: center;
     img {
       max-width: 100%;
+      pointer-events: none;
     }
   }
   &__desc {

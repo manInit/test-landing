@@ -4,7 +4,7 @@
   font-size: 14px;
   letter-spacing: 1px;
   a {
-    transition: color 0.2s;
+    transition: color v.$transition-time;
     &:hover {
       color: v.$first-grad-color;
     }

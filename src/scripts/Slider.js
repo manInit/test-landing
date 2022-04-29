@@ -21,6 +21,8 @@ export default class Slider {
       this.controlRoot.addEventListener('click', this._clickHandle.bind(this))
       this.list.addEventListener('mousedown', this._mouseDownHandle.bind(this))
       this.list.addEventListener('mouseup', this._mouseUpHandle.bind(this))
+      this.list.addEventListener('touchstart', this._touchDown.bind(this))
+      this.list.addEventListener('touchend', this._touchUp.bind(this))
     }
   }
 
@@ -44,13 +46,26 @@ export default class Slider {
     ) 
   }
 
+  _touchDown(e) {
+    this.mouseX = e.touches[0].clientX
+  }
+
   _mouseDownHandle(e) {
     this.mouseX = e.clientX
+  }
+
+  _touchUp(e) {
+    const deltaX = e.changedTouches[0].clientX - this.mouseX
+    this._move(deltaX)
   }
 
   _mouseUpHandle(e) {
     e.preventDefault()
     const deltaX = e.clientX - this.mouseX
+    this._move(deltaX)
+  }
+
+  _move(deltaX) {
     if (deltaX < -5) {
       if (this.activeNumber === this.count - 1) return
       this.activeNumber++
